@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Website</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">MySite</div>
+      <div class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+        <li><a href="#services"><i class="fas fa-cogs"></i> Services</a></li>
+        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="section">
+      <h1>Welcome to MySite</h1>
+      <p>This is a fully responsive page using Flexbox and media queries.</p>
+    </section>
+
+    <section id="about" class="section">
+      <h1>About Us</h1>
+      <p>We create modern, responsive web experiences.</p>
+    </section>
+
+    <section id="services" class="section">
+      <h1>Our Services</h1>
+      <p>We offer web design, development, and digital consulting.</p>
+    </section>
+
+    <section id="contact" class="section">
+      <h1>Contact Us</h1>
+      <p>Reach us at hello@example.com</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 MySite</p>
+  </footer>
+
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    toggleBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
+
